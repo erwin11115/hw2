@@ -1,0 +1,14 @@
+In this assignment, you will need to do the following:
+
+(Inputs) Add buttons on the bread board (as DigitalIn): up, down and select.
+(Display) Create a selection display on uLCD to select from a few frequencies by your choice, e.g., 100Hz, 200Hz, etc.
+(Generate waveform) Use DAC to generate a wave form with the chosen frequency and pass the generated signal through a RC low pass filter.
+(Measure) Use Picoscope to measure the generated wave form.
+(Sample) Sample the generated wave form and send the value to PC/Python.
+(Analysis) Analyze the captured waveform: show frequency response and wave on screen with Matplotlib.
+
+
+ $ sudo mbed compile --source . --source ~/ee2405/mbed-os-build/ -m B_L4S5I_IOT01A -t GCC_ARM -f
+ to compile
+ $ sudo python3 FFT.p
+ to plot the wave
