@@ -111,6 +111,7 @@ int main() {
 void print(int fre) {
     uLCD.cls();
     uLCD.textbackground_color(WHITE);
+    uLCD.printf("\n100Hz, 50Hz, 28Hz, 20Hz\n");
     uLCD.text_width(3);
     uLCD.locate(2, 5);
     uLCD.printf("\n%dHz\n", fre);
